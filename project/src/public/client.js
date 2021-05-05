@@ -107,7 +107,7 @@ const RoverPhotoGalery = (photos, selectedRover) => {
         .map((photo) => {
             return (`
                 <div class="col-lg-3 col-md-4 col-sm-6 pb-2 rover">
-                    <p class="name">Name: ${photo.rover.name}</p>
+                    <p class="name">Date: ${photo.earth_date}</p>
                     <p class="status">Status: ${photo.rover.status}</p>
                     <img src="${photo.img_src}" />
                     <p class="land">Landing Date: ${photo.rover.landing_date}</p>
