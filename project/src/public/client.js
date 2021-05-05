@@ -106,8 +106,12 @@ const RoverPhotoGalery = (photos, selectedRover) => {
     return photos.filter((photo) => (photo.rover.name === selectedRover))
         .map((photo) => {
             return (`
-                <div class="col-3 pb-2">
+                <div class="col-lg-3 col-md-4 col-sm-6 pb-2 rover">
+                    <p class="name">Name: ${photo.rover.name}</p>
+                    <p class="status">Status: ${photo.rover.status}</p>
                     <img src="${photo.img_src}" />
+                    <p class="land">Landing Date: ${photo.rover.landing_date}</p>
+                    <p class="launch">Launch Date: ${photo.rover.launch_date}</p>
                 </div>
             `);
         }).join('');
@@ -119,7 +123,7 @@ const Rovers = (rovers, selectedRover) => {
     }
 
     return rovers.map((rover) => {
-        return (`<div class="col-4${rover === selectedRover ? ' selected' : ''} rover pb-3" onclick="selectRover('${rover}')">${rover}</div>`);
+        return (`<div class="col-4${rover === selectedRover ? ' selected' : ''} rover-btn pb-3" onclick="selectRover('${rover}')">${rover}</div>`);
     }).join('');
 };
 

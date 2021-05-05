@@ -11,6 +11,14 @@ header {
   /* header styles */
 }
 
+h1 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
 main {
   flex: 1;
   padding: 20px;
@@ -20,7 +28,42 @@ main {
   width: 100%;
 }
 
-.rover {
+.galery .rover {
+  position: relative;
+}
+
+.galery .rover .name {
+  position: absolute;
+  color: white;
+  font-size: 21px;
+  text-shadow: 0 0 3px #000;
+}
+
+.galery .rover .status {
+  position: absolute;
+  color: white;
+  font-size: 16px;
+  top: 20px;
+  text-shadow: 0 0 3px #000;
+}
+
+.galery .rover .land {
+  position: absolute;
+  bottom: 25px;
+  color: white;
+  font-size: 16px;
+  text-shadow: 0 0 3px #000;
+}
+
+.galery .rover .launch {
+  position: absolute;
+  bottom: 0px;
+  color: white;
+  font-size: 16px;
+  text-shadow: 0 0 3px #000;
+}
+
+.rover-btn {
   cursor: pointer;
   height: 50px;
 
