@@ -16,6 +16,27 @@ main {
   padding: 20px;
 }
 
+.galery img {
+  width: 100%;
+}
+
+.rover {
+  cursor: pointer;
+  height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rover.selected {
+  background-color: #abafdec9;
+}
+
+p {
+  text-align: center;
+}
+
 footer {
   /* footer styles */
 }
